@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="icon" href="img/гл.png" type="image/x-icon">
+<link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+<title>Виртуальная экскурсия по автомобильному отделению</title>
+<style>
+body {
+  font-family: Tahoma;
+  font-size: 20px;
+  color:#00FF00;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-shadow: 1px 1px 1px #fad039;
+  margin: 0;
+  background-image: url(img/fon.jpg);
+  background-size: 100vh;
+ }
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+ display: block;
+}
+
+
+.mySlides {
+  display: none;
+}
+
+
+.cursor {
+  cursor: pointer;
+}
+
+.h2{
+	font-family: 'Oswald', sans-serif;
+	font-size: 20px;	
+}
+
+.prev{
+	cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  user-select: none;
+  -webkit-user-select: none;
+  opacity: 1;
+background: linear-gradient(90deg, rgba(11, 0, 140, 0.88) 0%, rgba(255, 0, 122, 0) 100%);
+border-radius: 25px 11px 11px 25px;
+
+}
+.next {
+	
+	cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  user-select: none;
+  -webkit-user-select: none;
+  opacity: 1;
+background: linear-gradient(90deg, rgba(255, 0, 122, 0) 0%, rgba(11, 0, 140, 0.88) 100%);
+border-radius: 11px 25px 25px 11px;
+
+}
+
+.next {
+  right: 0;
+  border-radius: 11px 25px 25px 11px;
+}
+
+
+.prev:hover {
+	background: linear-gradient(90deg, rgba(11, 0, 140, 0.88) 0%, rgba(255, 122, 0, 0.56) 100%);
+}
+.next:hover {
+  background: linear-gradient(90deg, rgba(255, 122, 0, 0.56) 0%, rgba(11, 0, 140, 0.88) 100%);
+}
+
+.numbertext {
+	color: #f2f2f2;
+  font-size: 12px;
+  padding: 1px 1px;
+  position: fixed;
+  top: 0;
+}
+
+
+.begstrok{
+
+position: fixed;
+right: 0;bottom:0;bottom:0;
+width: 35%;
+display: flex;
+margin-top: 1px;
+margin-bottom: 4px;
+font-family: 'Oswald', sans-serif;
+font-size: 25px;
+font-style: normal;
+font-weight: normal;
+color: #0300AC;
+}
+.caption-container{
+	height: 35px;
+}
+.caption-container {
+	position: fixed; /* Фиксированное положение */
+ left: 0; bottom: 0; bottom: 0;
+
+width: 100%;
+border-radius: 20px 20px 0px 0px;
+background: linear-gradient(180deg, rgba(255, 199, 0, 0.53) 0%, rgba(242, 242, 242, 0.49) 100%);
+
+  }
+
+
+.footer__nav{
+margin-bottom: 5px;
+display: flex;
+
+
+}
+
+.footer_text{
+
+font-family: 'Oswald', sans-serif;
+font-size: 25px;
+font-style: normal;
+font-weight: normal;
+color: #FFFFFF;
+}
+
+
+.soc{
+	display: block;
+vertical-align: top;
+	padding-top: 13%;
+display: inline-block;
+position: relative;
+justify-content: space-between;
+}
+.soc:after{
+	content: "";
+	display: block;
+	width: 100%;
+	height: 3px;
+	background-color: #ffc803;
+	opacity: 0;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: 1;
+	transition: opacity .2s linear;
+	}
+.soc:hover{
+color: #ffc803;
+}
+.soc:hover:after{
+opacity: 1;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+</style>
+<body>
+<div class="h2"><h2 style="text-align:center">Виртуальная экскурсия по автомобильному отделению</h2></div>
+
+<div class="container" style="width: 100%">
+	<div class="mySlides">
+		<div class="numbertext">1 / 13</div>
+		<img src="img/1.png" style="width:100%">
+	</div>
+
+<div class="mySlides">
+		<div class="numbertext">2 / 13</div>
+		<img src="img/2.png" style="width:100%">
+	</div>
+
+<div class="mySlides">
+		<div class="numbertext">3 / 13</div>
+		<img src="img/3.png" style="width:100%">
+	</div>
+
+	<div class="mySlides">
+		<div class="numbertext">4 / 13</div>
+		<img src="img/4.png" style="width:100%">
+	</div>
+
+	<div class="mySlides">
+		<div class="numbertext">5 / 13</div>
+		<img src="img/5.png" style="width:100%">
+	</div>
+
+  <div class="mySlides">
+    <div class="numbertext">6 / 13</div>
+    <img src="img/6.png" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">7 / 13</div>
+    <img src="img/7.png" style="width:100%">
+  </div>
+
+    <div class="mySlides">
+    <div class="numbertext">8 / 13</div>
+    <img src="img/8.png" style="width:100%">
+  </div>
+
+    <div class="mySlides">
+    <div class="numbertext">9 / 13</div>
+    <img src="img/9.png" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">10 / 13</div>
+    <img src="img/10.png" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">11 / 13</div>
+    <img src="img/11.png" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">12 / 13</div>
+    <img src="img/12.png" style="width:100%">
+  </div>
+
+    <div class="mySlides">
+    <div class="numbertext">13 / 13</div>
+    <img src="img/13.png" style="width:100%">
+  </div>
+       
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+ 
+ <div class="caption-container">
+  <div class="footer__nav">  
+    <div class="footer_text"> Мы в соц. сетях:     </div>   	
+    	<div class="nav">
+
+    	<div class="soc">
+
+    		<a href="https://vk.com/public186145198"><img src="img/vk.png" width="25px" height="25px"></a>
+    	</div>
+
+    	<div class="soc">
+    	  <a href="https://www.instagram.com/lk_kolledz/"><img src="img/insta.png" width="25px" height="25px"></a>
+    	</div>
+
+    	</div>
+
+
+     	  </div>
+
+     	    </div>
+<div class="begstrok"><marquee scrollamount="13">Добро пожаловать на виртуальную экскурсию по автомобильному отделению!</marquee></div>
+     	  </div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+</body>
+</html>
+
+
+
